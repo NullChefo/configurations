@@ -33,6 +33,14 @@ sudo apt-get update \
 # kvm
 && sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils \
 
+# monoDevelop
+
+&& sudo apt install apt-transport-https dirmngr \
+&& sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF \
+&& echo "deb https://download.mono-project.com/repo/ubuntu vs-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-vs.list \
+&& sudo apt update \
+&& sudo apt-get install monodevelop \
+
 
 # flatpack install
 && flatpak install flathub -y org.gnome.Extensions \
