@@ -7,6 +7,10 @@ sudo apt-get update \
 && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
 # reboot
 && sudo apt install curl git neovim\
+# Oh my bash
+&& bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" /
+# nano .bashrc
+# OSH_THEME="agnoster"
 && sudo snap install yt-dlp \
 && sudo snap install ffmpeg \
 && sudo snap install eclipse --classic \
