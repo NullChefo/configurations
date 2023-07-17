@@ -8,7 +8,8 @@ sudo apt-get update \
 && sudo apt install gnome-software-plugin-flatpak \
 && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
 # reboot
-&& sudo apt install curl git neovim\
+&& sudo apt -y install curl git neovim\
+&& sudo apt-get -y install podman && \
 # Oh my bash
 && bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" /
 # nano .bashrc
@@ -43,6 +44,7 @@ sudo apt-get update \
 
 
 # flatpack install
+&& flatpak install flathub -y io.podman_desktop.PodmanDesktop \
 && flatpak install flathub -y org.gnome.Extensions \
 && flatpak install flathub -y net.cozic.joplin_desktop \
 && flatpak install flathub -y com.slack.Slack \
@@ -60,26 +62,27 @@ sudo apt-get update \
 && flatpak install flathub -y com.github.tchx84.Flatseal \
 && flatpak install flathub -y com.discordapp.Discord \
 && flatpak install flathub -y com.valvesoftware.Steam \
-&& flatpak install flathub -y ccom.usebottles.bottles \
-&& flatpak install flathub -y ccom.anydesk.Anydesk \
-&& flatpak install flathub -y corg.onlyoffice.desktopeditors \
-&& flatpak install flathub -y corg.signal.Signal \
-&& flatpak install flathub -y ccom.opera.Opera \
-&& flatpak install flathub -y corg.x.Warpinator \
-&& flatpak install flathub -y cfr.handbrake.ghb \
-&& flatpak install flathub -y corg.blender.Blender \
-&& flatpak install flathub -y corg.kde.krita \
-&& flatpak install flathub -y corg.inkscape.Inkscape \
-&& flatpak install flathub -y cio.dbeaver.DBeaverCommunity \
-&& flatpak install flathub -y corg.flameshot.Flameshot \
-&& flatpak install flathub -y ccom.transmissionbt.Transmission \
-&& flatpak install flathub -y ccom.jgraph.drawio.desktop \
-&& flatpak install flathub -y ccom.raggesilver.BlackBox \
-&& flatpak install flathub -y crest.insomnia.Insomnia \
-&& flatpak install flathub -y corg.wireshark.Wireshark \
-&& flatpak install flathub -y corg.gnome.World.PikaBackup \
-&& flatpak install flathub -y ccc.arduino.arduinoide \
-&& flatpak install flathub -y cdev.k8slens.OpenLens \
+&& flatpak install flathub -y com.usebottles.bottles \
+&& flatpak install flathub -y com.anydesk.Anydesk \
+&& flatpak install flathub -y org.onlyoffice.desktopeditors \
+&& flatpak install flathub -y org.signal.Signal \
+&& flatpak install flathub -y com.opera.Opera \
+&& flatpak install flathub -y org.x.Warpinator \
+&& flatpak install flathub -y fr.handbrake.ghb \
+&& flatpak install flathub -y org.blender.Blender \
+&& flatpak install flathub -y org.kde.krita \
+&& flatpak install flathub -y org.inkscape.Inkscape \
+&& flatpak install flathub -y io.dbeaver.DBeaverCommunity \
+&& flatpak install flathub -y org.flameshot.Flameshot \
+&& flatpak install flathub -y com.transmissionbt.Transmission \
+&& flatpak install flathub -y com.jgraph.drawio.desktop \
+&& flatpak install flathub -y com.raggesilver.BlackBox \
+&& flatpak install flathub -y rest.insomnia.Insomnia \
+&& flatpak install flathub -y org.wireshark.Wireshark \
+&& flatpak install flathub -y org.gnome.World.PikaBackup \
+&& flatpak install flathub -y cc.arduino.arduinoide \
+&& flatpak install flathub -y dev.k8slens.OpenLens \
+
 # Other
 && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
 && curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash \
