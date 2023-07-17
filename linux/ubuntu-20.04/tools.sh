@@ -82,6 +82,13 @@ sudo apt-get update \
 && flatpak install flathub -y org.gnome.World.PikaBackup \
 && flatpak install flathub -y cc.arduino.arduinoide \
 && flatpak install flathub -y dev.k8slens.OpenLens \
+&& flatpak install flathub org.upscayl.Upscayl \
+&& flatpak install flathub com.github.jeromerobert.pdfarranger \
+&& flatpak install flathub org.mozilla.Thunderbird \
+&& flatpak install flathub io.gitlab.adhami3310.Impression \
+&& flatpak install flathub com.boxy_svg.BoxySVG \
+&& flatpak install flathub com.lakoliu.Furtherance \
+
 
 # Other
 && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
