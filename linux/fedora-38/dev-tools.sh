@@ -28,6 +28,7 @@ sudo dnf update \
 && sudo snap install code --classic \
 && sudo snap install dotnet-sdk --channel=8.0/beta --classic \
 
+&& flatpak install flathub io.podman_desktop.PodmanDesktop \
 && flatpak install flathub -y net.cozic.joplin_desktop \
 && flatpak install flathub -y com.slack.Slack \
 && flatpak install flathub -y com.bitwarden.desktop \
