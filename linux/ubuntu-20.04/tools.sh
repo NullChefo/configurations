@@ -133,8 +133,8 @@ sudo apt-get update \
 && curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh \
 # && distrobox-create --name apt --image ubuntu:22.04 \
 # && distrobox enter apt \
-&& distrobox-create --name fedora-test --image fedora-38 \
-&& distrobox enter fedora-test \
+&& distrobox-create --name dnf --image quay.io/fedora/fedora:38 \
+&& distrobox enter dnf \
 
 
 
