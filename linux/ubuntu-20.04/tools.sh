@@ -135,3 +135,11 @@ sudo apt-get update \
 # && distrobox enter apt \
 && distrobox-create --name fedora-test --image fedora-38 \
 && distrobox enter fedora-test \
+
+
+
+&& brew install gh \
+&& curl -s "https://get.sdkman.io" | bash \
+# https://www.graalvm.org/downloads/
+&& sdk install java 20.0.1-graal \
+
