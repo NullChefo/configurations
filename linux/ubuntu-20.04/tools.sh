@@ -80,14 +80,14 @@ sudo apt-get update \
 && flatpak install flathub -y rest.insomnia.Insomnia \
 && flatpak install flathub -y org.wireshark.Wireshark \
 && flatpak install flathub -y org.gnome.World.PikaBackup \
-&& flatpak install flathub -y cc.arduino.arduinoide \
+# && flatpak install flathub -y cc.arduino.arduinoide \
 && flatpak install flathub -y dev.k8slens.OpenLens \
-&& flatpak install flathub org.upscayl.Upscayl \
-&& flatpak install flathub com.github.jeromerobert.pdfarranger \
-&& flatpak install flathub org.mozilla.Thunderbird \
-&& flatpak install flathub io.gitlab.adhami3310.Impression \
-&& flatpak install flathub com.boxy_svg.BoxySVG \
-&& flatpak install flathub com.lakoliu.Furtherance \
+&& flatpak install flathub -y org.upscayl.Upscayl \
+&& flatpak install flathub -y com.github.jeromerobert.pdfarranger \
+&& flatpak install flathub -y org.mozilla.Thunderbird \
+&& flatpak install flathub -y io.gitlab.adhami3310.Impression \
+&& flatpak install flathub -y com.boxy_svg.BoxySVG \
+&& flatpak install flathub -y com.lakoliu.Furtherance \
 
 
 # Other
