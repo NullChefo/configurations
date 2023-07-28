@@ -139,6 +139,7 @@ sudo apt-get update \
 
 
 && brew install gh \
+&& sudo apt -y install unzip zip \
 && curl -s "https://get.sdkman.io" | bash \
 # https://www.graalvm.org/downloads/
 && sdk install java 20.0.1-graal \
