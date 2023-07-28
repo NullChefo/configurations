@@ -14,6 +14,10 @@ sudo apt-get update \
 && bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)" /
 # nano .bashrc
 # OSH_THEME="agnoster"
+
+# Fonts
+&& sudo apt-get install fonts-powerline \
+
 && sudo snap install yt-dlp \
 && sudo snap install ffmpeg \
 && sudo snap install eclipse --classic \
