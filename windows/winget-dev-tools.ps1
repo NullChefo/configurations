@@ -1,5 +1,16 @@
 #Echo Install dev programs
 
+winget install JanDeDobbeleer.OhMyPosh -s winget
+
+# open new terminal WINDOWS and execute:
+# open as admin (FOR ALL USERS)
+oh-my-posh font install
+
+
+# if you want for the current user execute:
+# oh-my-posh font install --user
+
+
 # maybe change
 winget install -e --id Microsoft.VisualStudio.2022.Community
 winget install -e --id GoLang.Go.1.20
