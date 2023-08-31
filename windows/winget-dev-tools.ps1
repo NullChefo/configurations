@@ -17,6 +17,7 @@ winget install -e --id GoLang.Go.1.20
 
 winget install -e --id ONLYOFFICE.DesktopEditors
 winget install -e --id Brave.Brave
+winget install -e --id Microsoft.AzureCLI
 
 
 winget install -e --id PuTTY.PuTTY;
