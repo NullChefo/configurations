@@ -98,7 +98,6 @@
 
 
 && brew install gh \
-&& sudo apt -y install unzip zip \
 && curl -s "https://get.sdkman.io" | bash \
 && source ~/.sdkman/bin/sdkman-init.sh
 # https://www.graalvm.org/downloads/

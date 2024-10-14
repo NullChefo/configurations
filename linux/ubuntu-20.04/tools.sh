@@ -9,6 +9,7 @@ sudo apt-get update \
 && sudo apt install gnome-software-plugin-flatpak -y \
 && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
 # reboot
+&& sudo apt -y install unzip zip \
 && sudo apt -y install curl git neovim \
 && sudo apt-get -y install podman \
 && sudo apt install gnome-shell-extension-manager -y \
@@ -21,7 +22,7 @@ sudo apt-get update \
 
 # press 2
 
-echo $SHELL
+# echo $SHELL
 chsh -s $(which zsh)
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
@@ -32,7 +33,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 
-nano ~/.zshrc
+# nano ~/.zshrc
 
 # ZSH_THEME="agnoster"
 # plugins=(git zsh-autosuggestions zsh-syntax-highlighting python docker docker-compose kubectl minikube helm gcloud aws dotnet go flutter gradle)
@@ -105,5 +106,4 @@ nano ~/.zshrc
 
 
 # https://www.google.com/chrome/
-# sudo apt install ./google-chrome-stable_current_amd64.deb -y \
 # https://brave.com/linux/
