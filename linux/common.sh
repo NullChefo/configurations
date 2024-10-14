@@ -102,7 +102,7 @@
 && curl -s "https://get.sdkman.io" | bash \
 && source ~/.sdkman/bin/sdkman-init.sh
 # https://www.graalvm.org/downloads/
-&& sdk install java 20.0.1-graalce \
+&& sdk install java 22.0.2-graalce \
 
 
 

@@ -5,12 +5,12 @@
 sudo apt-get update \
 && sudo apt-get upgrade \
 && sudo snap refresh \
-&& sudo apt install flatpak \
-&& sudo apt install gnome-software-plugin-flatpak \
+&& sudo apt install flatpak -y \
+&& sudo apt install gnome-software-plugin-flatpak -y \
 && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
 # reboot
-&& sudo apt -y install curl git neovim\
-&& sudo apt-get -y install podman && \
+&& sudo apt -y install curl git neovim \
+&& sudo apt-get -y install podman \
 && sudo apt install gnome-shell-extension-manager -y \
 
 
@@ -43,14 +43,14 @@ nano ~/.zshrc
 
 
 # Fonts
-&& sudo apt-get install fonts-powerline \
+&& sudo apt-get install fonts-powerline -y \
 
 
 # Run common.sh
 
 
 # kvm
-&& sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils \
+&& sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils -y\
 
 # monoDevelop
 && sudo apt install apt-transport-https dirmngr \
@@ -105,4 +105,5 @@ nano ~/.zshrc
 
 
 # https://www.google.com/chrome/
+# sudo apt install ./google-chrome-stable_current_amd64.deb -y \
 # https://brave.com/linux/
