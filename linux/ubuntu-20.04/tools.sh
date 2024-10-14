@@ -4,12 +4,42 @@
 
 sudo apt-get update \
 && sudo apt-get upgrade \
+&& sudo snap refresh \
 && sudo apt install flatpak \
 && sudo apt install gnome-software-plugin-flatpak \
 && flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
 # reboot
 && sudo apt -y install curl git neovim\
 && sudo apt-get -y install podman && \
+&& sudo apt install gnome-shell-extension-manager -y \
+
+
+
+
+&& sudo apt install zsh -y \
+&& zsh
+
+# press 2
+
+echo $SHELL
+chsh -s $(which zsh)
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+
+
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+
+nano ~/.zshrc
+
+# ZSH_THEME="agnoster"
+# plugins=(git zsh-autosuggestions zsh-syntax-highlighting python docker docker-compose kubectl minikube helm gcloud aws dotnet go flutter gradle)
+# source ~/.zshrc
+
+
+
 
 
 # Fonts
@@ -70,3 +100,9 @@ sudo apt-get update \
 && distrobox-create --name dnf --image quay.io/fedora/fedora:38 \
 && distrobox enter dnf \
 
+
+
+
+
+# https://www.google.com/chrome/
+# https://brave.com/linux/
