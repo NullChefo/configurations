@@ -38,3 +38,5 @@ winget install -e --id yt-dlp.yt-dlp;
 winget install -e --id Opera.Opera;
 winget install -e --id Microsoft.DotNet.SDK.8;
 winget install -e --id VideoLAN.VLC;
+winget install -e --id Insomnia.Insomnia;
+https://winget.run/pkg/Obsidian/Obsidian;
