@@ -26,3 +26,12 @@ sudo dnf update \
 #KVM 
 && sudo dnf group install --with-optional virtualization \
 && sudo systemctl enable libvirtd \
+
+
+
+
+# isntall podman
+
+
+&& sudo dnf -y install podman \
+&& sudo dnf -y install podman-machine \
